@@ -1,23 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mq4-xT-sz4"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6m-3j-JJY">
+                                <items>
+                                    <barButtonItem title="Pick" width="160.5" id="CIW-NJ-Gkh">
+                                        <connections>
+                                            <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="Olz-08-kPF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Camera" id="sEv-k4-nAl">
+                                        <connections>
+                                            <action selector="pickAnImageFromCameraWithSender:" destination="BYZ-38-t0r" id="XeP-ci-cHK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mq4-xT-sz4" secondAttribute="bottom" constant="220" id="157-6i-7v9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C6m-3j-JJY" secondAttribute="bottom" id="1np-Xa-aED"/>
+                            <constraint firstItem="Mq4-xT-sz4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="5rz-3t-3Lh"/>
+                            <constraint firstItem="Mq4-xT-sz4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LQz-Be-eac"/>
+                            <constraint firstItem="C6m-3j-JJY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Uk1-op-25a"/>
+                            <constraint firstItem="C6m-3j-JJY" firstAttribute="top" secondItem="Mq4-xT-sz4" secondAttribute="bottom" constant="176" id="X0T-mb-9gY"/>
+                            <constraint firstAttribute="trailing" secondItem="C6m-3j-JJY" secondAttribute="trailing" id="dWS-mD-CvZ"/>
+                            <constraint firstItem="Mq4-xT-sz4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="fIi-tq-JpR"/>
+                            <constraint firstItem="Mq4-xT-sz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jms-NY-v3H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mq4-xT-sz4" secondAttribute="trailing" constant="24" id="tFh-Ah-nVt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="sEv-k4-nAl" id="Bw0-Bz-UNc"/>
+                        <outlet property="imagePickerView" destination="Mq4-xT-sz4" id="kaT-0Y-IoT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

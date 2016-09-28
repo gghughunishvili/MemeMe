@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "18CE767B01EA1102AD03A9C83AA3B27FD1215726",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "18CE767B01EA1102AD03A9C83AA3B27FD1215726" : 9223372036854775807,
+    "9282CBAEF512E97E9062BA8FB48B7DF368514DFF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AB0F3822-9C0F-44D3-8418-3378838B1149",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "18CE767B01EA1102AD03A9C83AA3B27FD1215726" : "MemeMe\/",
+    "9282CBAEF512E97E9062BA8FB48B7DF368514DFF" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MemeMe",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MemeMe.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gghughunishvili\/MemeMe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "18CE767B01EA1102AD03A9C83AA3B27FD1215726"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:giorgi855007\/iOS-dev.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9282CBAEF512E97E9062BA8FB48B7DF368514DFF"
+    }
+  ]
+}
